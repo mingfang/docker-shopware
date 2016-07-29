@@ -26,7 +26,7 @@ RUN apt-get install -y mysql-server mysql-client
 RUN apt-get install -y php libapache2-mod-php php-mcrypt php-mysql php-gd php-curl php-ssh2 php-simplexml php-mbstring php-zip
 
 #Shopware
-RUN wget http://releases.s3.shopware.com.s3.amazonaws.com/install_5.2.2_fec9a405e4d6043625058bc5bf3badecd9197333.zip && \
+RUN wget http://releases.s3.shopware.com.s3.amazonaws.com/install_5.2.3_3066bee006dc8fa082b6691a6af186810b3e4f05.zip && \
     unzip install*zip -d /var/www/html && \
     chown -R www-data:www-data /var/www/html && \
     rm install*zip
